@@ -36,7 +36,7 @@ jobs:
       - name: Set image tags
         id: vars
         run: |
-          IMAGE_NAME="DeliaSpridon/deploy_test/deploy_test"
+          IMAGE_NAME="deliaspridon/deploy_test"
           GIT_SHA="${GITHUB_SHA::7}"
           echo "image_name=${IMAGE_NAME}" >> $GITHUB_OUTPUT
           echo "tag_latest=${IMAGE_NAME}:latest" >> $GITHUB_OUTPUT
